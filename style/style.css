@@ -3,8 +3,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
 * {
+  margin:0;
+  padding:0;
   box-sizing: border-box;
-  margin: 0;
+  text-decoration:none;
+  list-style:none;
 }
 
 body,
@@ -46,13 +49,57 @@ html {
   top: 0;
   z-index: 1;
 }
+.checkbtn {
+  font-size:30px;
+  color:white;
+  float:right;
+  line-height:80px;
+  margin-right:40px;
+  cursor:pointer;
+  display:none;
+  }
+  #check {
+  display:none;
+  }
 
 .logo {
   flex: 1;
-  font-size: 40px;
-  padding: 20px;
-  margin-left: 50px;
+  line-height:80px;
+  font-size: 35px;
+  padding:0 100px;
+  font-weight:bold;
   font-family: Satisfy;
+}
+nav ul {
+  float: right;
+  margin-right:20px;
+}
+nav ul li {
+  line-height:80px;
+  display:inline-block;
+  margin:0 5px;
+}
+nav ul li a {
+  text-transform:uppercase;
+  font-size: 16px;
+  color: white;
+  padding:7px 13px;
+  border-radius:3px;
+}
+a.active,a:hover {
+  transition:0.5s;
+}
+.checkbtn {
+  font-size:30px;
+  color:rgb(208, 78, 78);
+  float:right;
+  line-height:80px;
+  margin-right:40px;
+  cursor:pointer;
+  display:none;
+}
+#check {
+  display:none;
 }
 
 ul.menu {
@@ -466,6 +513,45 @@ ul.menu {
 }
 
 /*==========================Responsive=============================*/
+@media (max-width:952px) {
+  .logo {
+    font-size:30px;
+    padding-left:50px;
+  }
+  .nav-bar ul li a {
+    font-size:16px;
+  }
+}
+@media (max-width:858px) {
+  .checkbtn {
+    display:block;
+  }
+ ul {
+    position: fixed;
+    height:100vh;
+    width:100%;
+    background: #2c3e50;
+    top:80px;
+    left:-100%;
+    text-align:center;
+    transition: all .5s;
+  }
+  .nav-bar ul li {
+    display:block;
+    line-height:30px;
+    margin:50px 0;
+  }
+  .nav-bar ul li a {
+    font-size: 20px;
+  }
+  a.active,a:hover {
+    background:none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul {
+    left:0;
+  }
+}
 @media all and (max-width: 1172px) {
   .banner-text-item .form {
     display: flex;
