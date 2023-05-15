@@ -13,38 +13,55 @@
     <div class="container right-panel-active">
         <!-- Sign Up -->
         <div class="container__form container--signup">
-            <form action="#" class="form" id="form1">
+            <form action="./database/registration.php" class="form" id="form1" method="post">
                 <h2 class="form__title">Sign Up</h2>
-                <input type="text" placeholder="User" class="input" />
-                <input type="email" placeholder="Email" class="input" />
-                <input type="password" placeholder="Password" class="input" />
-                <button class="btn">Sign Up</button>
+                <input type="text" placeholder="User" class="input" name="user" />
+                <input type="email" placeholder="Email" class="input" name="email" />
+                <input type="password" placeholder="Password" class="input" name="password"/>
+                <button class="btn" name="signup">Sign Up</button>
             </form>
         </div>
         <!-- Sign In -->
         <div class="container__form container--signin">
-            <form action="#" class="form" id="form2">
+            <form action="./database/login.php" class="form" id="form2" method="post">
                 <h2 class="form__title">Sign In</h2>
-                <input type="email" placeholder="Email" class="input" />
-                <input type="password" placeholder="Password" class="input" />
+                <input type="email" placeholder="Email" class="input" name="email"/>
+                <input type="password" placeholder="Password" class="input" name="password"/>
                 <a href="#" class="link">Forgot your password?</a>
-                <button class="btn">Sign In</button>
+                <button class="btn" name="signin">Sign In</button>
             </form>
         </div>
         <!-- Overlay -->
         <div class="container__overlay">
             <div class="overlay">
                 <div class="overlay__panel overlay--left">
-                    <button class="btn" id="signIn">Sign In</button>
+                    <button class="btn" id="signIn" name="signin">Sign In</button>
                 </div>
                 <div class="overlay__panel overlay--right">
-                    <button class="btn" id="signUp">Sign Up</button>
+                    <button class="btn" id="signUp" name="signup">Sign Up</button>
                 </div>
             </div>
         </div>
     </div>
     <!-- Script -->
-    <script src="./script/login.js"></script>
+    <script>
+        // Get references to the HTML elements
+const signInButton = document.getElementById("signIn");
+const signUpButton = document.getElementById("signUp");
+const container = document.querySelector(".container");
+
+// Add event listeners for the button clicks
+signInButton.addEventListener("click", () => {
+  container.classList.remove("right-panel-active");
+});
+
+signUpButton.addEventListener("click", () => {
+  container.classList.add("right-panel-active");
+});
+
+    </script>
+
+   
 </body>
 
 </html>
