@@ -534,7 +534,7 @@ ul.menu {
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    width: 150%;
+    width: 100%;
   }
 
   .banner-text-item .form input,
@@ -559,7 +559,7 @@ ul.menu {
   }
 
   .banner-heading h1 {
-    font-size: 60px;
+    font-size: 20px;
   }
 }
 
