@@ -253,7 +253,7 @@
 exploreBtn.addEventListener('click', () => {
   const courseName = document.querySelector('input[type="text"]').value;
   const date = document.querySelector('.date').value;
-  const searchQuery = `${courseName} ${date} site:google.com`;
+  const searchQuery = `${courseName} site:google.com`;
   const googleSearchUrl = `https://www.google.com/search?q=${encodeURIComponent(searchQuery)}`;
   window.open(googleSearchUrl, '_blank');
 });
