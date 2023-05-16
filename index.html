@@ -35,7 +35,7 @@
                 <div class="banner-heading">
                     <h1>Choose your career!</h1>
                 </div>
-                <form class="form" >
+                <form class="form">
                     <input type="text" list="mylist" placeholder="Which Course Do You Want To Pursue?">
                     <datalist id="mylist">
                         <option>BCA</option>
@@ -248,17 +248,18 @@
             </div>
         </div>
     </body>
-<script>
-    const exploreBtn = document.querySelector('.book');
-exploreBtn.addEventListener('click', () => {
-  const courseName = document.querySelector('input[type="text"]').value;
-  const date = document.querySelector('.date').value;
-  const searchQuery = `${courseName} site:google.com`;
-  const googleSearchUrl = `https://www.google.com/search?q=${encodeURIComponent(searchQuery)}`;
-  window.open(googleSearchUrl, '_blank');
-});
+    <script>
+        const exploreBtn = document.querySelector('.book');
+        exploreBtn.addEventListener('click', () => {
+            const courseName = document.querySelector('input[type="text"]').value;
+            const date = document.querySelector('.date').value;
+            const searchQuery = `${courseName} site:google.com`;
+            const googleSearchUrl = `https://www.google.com/search?q=${encodeURIComponent(searchQuery)}`;
+            window.open(googleSearchUrl, '_blank');
+        });
 
-</script>
+    </script>
+
 </html>
 </body>
 

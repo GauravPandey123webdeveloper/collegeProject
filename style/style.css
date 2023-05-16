@@ -7,7 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
- }
+}
 
 /*------------------------Scroll Bar-----------------------*/
 ::-webkit-scrollbar {
@@ -59,10 +59,10 @@
 }
 
 .logo {
-  line-height:80px;
+  line-height: 80px;
   font-size: 35px;
-  padding:0 100px;
-  font-weight:bold;
+  padding: 0 100px;
+  font-weight: bold;
   font-family: Satisfy;
 }
 
@@ -346,9 +346,9 @@ ul.menu {
 }
 
 .about-img img {
-  margin-left: 100px;
-  width: 700px;
-  height: 700px;
+  margin-left: 10vh;
+  width: 50%;
+  height: 50%;
   border-radius: 50%;
   box-shadow: 50px 20px 200px rgb(225, 208, 14);
 }
@@ -357,6 +357,7 @@ ul.menu {
   flex: 1;
   /*width: 100px;*/
   display: flex;
+  justify-content: center;
   flex-flow: column wrap;
 }
 
@@ -376,9 +377,9 @@ ul.menu {
 .about-text h2 {
   flex: 1;
   font-family: Barlow Condensed;
-  font-size: 60px;
+  font-size: 24px;
   color: #191d34;
-  width: 450px;
+  width: 118%
 }
 
 .about-text label {
@@ -390,11 +391,11 @@ ul.menu {
 }
 
 .about-text p {
-  width: 500px;
+  width: 70vh;
   line-height: 30px;
   color: #506172;
   font-weight: bolder;
-  padding: 50px 0;
+  /* padding: 50px 0; */
 }
 
 .about-text a {
@@ -479,10 +480,11 @@ ul.menu {
 }
 
 /*==========================Responsive=============================*/
+
 @media (width<=952px) {
   .logo {
-    font-size:30px;
-    padding-left:50px;
+    font-size: 30px;
+    padding-left: 50px;
   }
 
   .nav-bar ul li a {
@@ -493,7 +495,6 @@ ul.menu {
 @media (width<=858px) {
   .checkbtn {
     display: flex;
-   
   }
 
   ul {
@@ -504,7 +505,7 @@ ul.menu {
     top: 80px;
     left: -100%;
     text-align: center;
-    transition: all .5s;
+    transition: all 0.5s;
   }
 
   .nav-bar ul li {
@@ -542,7 +543,7 @@ ul.menu {
   .banner-text-item .form a {
     flex: 1;
     margin-bottom: 5px;
-    font-size: 14px;
+    font-size: 11px;
   }
 
   .banner-text-item .form input {
@@ -550,11 +551,11 @@ ul.menu {
   }
 
   .banner-text-item .form .date {
-    width: 30%;
+    width: 50%;
   }
 
   .banner-text-item .form .book {
-    width: 10%;
+    width: 40%;
     font-size: 14px;
   }
 
@@ -604,7 +605,6 @@ ul.menu {
     padding: 0;
     margin: 5;
     z-index: 1;
-
   }
 
   .nav-bar ul li {
@@ -700,8 +700,11 @@ ul.menu {
 
   .about-img {
     flex: 1;
+   
+    margin-top: 10px;
     margin-bottom: 20px;
   }
+  
 
   .about-text {
     flex: 1;
@@ -712,14 +715,22 @@ ul.menu {
     justify-content: center;
     align-items: center;
   }
+  .about-text p{
+    width: 40vh;
+    margin: -50px;
+    margin-top: 10px;
+  }
 
   .about-text h2 {
-    font-size: 35px;
+    font-size: 20px;
+    padding: 0;
   }
 
   .about-img img {
-    width: 400px;
-    height: 400px;
+   
+    width: 220%;
+    height: 94%;
+    margin-left: -42px;
   }
 }
 
