@@ -64,6 +64,6 @@ git clone https://github.com/your-username/utkarsh-academy.git
 
 7. Fill out the query form in the query section to submit any queries or feedback.
 
-## deployed link
+## deployment link
 https://utkarshacademebca.000webhostapp.com/
 
