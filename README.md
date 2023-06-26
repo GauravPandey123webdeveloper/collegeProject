@@ -38,7 +38,7 @@ The Utkarsh Academy project utilizes the following technologies:
 ## Installation
 
 1. Clone the project repository:
-git clone https://github.com/your-username/utkarsh-academy.git
+git clone https://github.com/GauravPandey123webdeveloper/collegeProject.git
 
 2. Ensure you have a web server (e.g., Apache) and MySQL database server installed on your local machine.
 
